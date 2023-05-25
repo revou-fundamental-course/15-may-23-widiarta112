@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="title">
+        <h1>Katik <span>Kalkulator Matematik</span></h1>
+      </div>
+    </header>
+
+    <section id="content">
+      <form id="form">
+        <label for="sideLength">Panjang Sisi:</label>
+        <input name="sisi-keliling" type="number" id="sideLength" min="0">
+
+        <p>PILIH PERHITUNGAN:</p>
+        <div class="perhitungan">
+          <div class="opsi">
+            <input type="radio" id="luas" name="pilih" value="luas"/>
+            <label for="luas">LUAS</label>
+          </div>
+          <div class="opsi">
+            <input type="radio" id="keliling" name="pilih" value="keliling" />
+            <label for="keliling">KELILING</label>
+          </div>
+        </div>
+        <input type="submit" name="hitung-keliling" id="calculateBtn" value="Hitung" />
+        <h3 id="formula"></h3>
+        <h2 id="result"></h2>
+      </form>
+
+    </section>
+    <footer class="bg-info">
+      <p> Copyright 2023 &copy; Katik All Rights Reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
